@@ -1,0 +1,61 @@
+# 🟡 Node.js modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# 🔵 Environment & Config
+.env
+.env.*.local
+*.local.json
+
+# 🔴 Logs & Runtime
+logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# 🔵 Temporary dev files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# ⚫ System binaries / certs
+certs/
+*.pem
+*.key
+*.crt
+
+# 🔵 Cache & builds
+.cache/
+dist/
+build/
+tmp/
+*.tmp
+
+# 🔴 Audio or media uploads (unless version-controlled)
+public/audio/
+public/video/
+uploads/
+static/
+
+# 🟢 Auto-generated route logs (if any)
+.route-debug.json
+
+# 🔵 OS-specific
+Thumbs.db
+ehthumbs.db
+Icon?
+desktop.ini
+
+# ⚠️ Coverage/test artifacts
+coverage/
+*.lcov
+*.test.js.snap
+
+# Optional: if you're using Docker
+docker-compose.override.yml
+docker-data/
