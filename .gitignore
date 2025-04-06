@@ -59,3 +59,4 @@ coverage/
 # Optional: if you're using Docker
 docker-compose.override.yml
 docker-data/
+.env

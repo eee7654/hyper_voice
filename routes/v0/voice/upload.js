@@ -1,4 +1,4 @@
-const app = require('../../../core/app');
+const app = require('../../../core/app.js');
 const { resolveRoutePath } = require('../../../utils/route-resolver');
 const formidable = require('formidable');
 const { exec } = require('child_process');
@@ -8,8 +8,6 @@ const AUDIO_DIR = path.join(process.cwd(), 'audios');
 if (!fs.existsSync(AUDIO_DIR)) fs.mkdirSync(AUDIO_DIR);
 
 const route = resolveRoutePath(__filename);
-
-console.log(route)
 
 app.post(route, (req, res) => {
     const form = new formidable.IncomingForm({ uploadDir: AUDIO_DIR, keepExtensions: true });

@@ -1,6 +1,6 @@
-const path = require('path');
-const app = require('./core/app');
-const loadRoutes = require('./core/routes-loader');
+const path = require('path')
+const app = require('./core/app.js');
+const loadRoutes = require('./core/routes-loader.js');
 
 loadRoutes(path.join(__dirname, 'routes'));
 

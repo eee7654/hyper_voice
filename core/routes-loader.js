@@ -20,22 +20,6 @@ function loadAllRoutes(dir) {
   };
 
   walk(dir);
-}function loadAllRoutes(dir) {
-  const walk = (folder) => {
-    const middlewarePath = path.join(folder, '__middleware.js');
-    if (fs.existsSync(middlewarePath)) {
-      require(middlewarePath);
-    }
-    fs.readdirSync(folder).forEach((file) => {
-      const full = path.join(folder, file);
-      const stat = fs.statSync(full);
-
-      if (stat.isDirectory()) return walk(full);
-      if (file.endsWith('.js')) require(full); // هر فایل خودش app رو داره
-    });
-  };
-
-  walk(dir);
 }
 
 module.exports = loadAllRoutes;
